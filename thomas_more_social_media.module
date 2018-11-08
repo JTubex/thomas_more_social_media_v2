@@ -6,7 +6,9 @@
 function thomas_more_social_media_theme() {
   return [
     'social-media' => [
-      'variables' => [],
+      'variables' => [
+        'facebook_url' => NULL,
+      ],
     ],
   ];
 }

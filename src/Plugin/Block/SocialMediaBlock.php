@@ -21,6 +21,7 @@ class SocialMediaBlock extends BlockBase {
     return [
       '#theme' => 'social-media',
       '#attached' => ['library' => ['thomas_more_social_media/social_media']],
+      '#facebook_url' => \Drupal::state()->get('thomas_more_social_media.facebook_url'),
     ];
   }
 
