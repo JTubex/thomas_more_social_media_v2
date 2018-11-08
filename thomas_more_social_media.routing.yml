@@ -4,3 +4,9 @@ thomas_more_social_media.admin.settings:
     _form: 'Drupal\thomas_more_social_media\Form\SettingsForm'
   requirements:
     _permission: 'access administration pages'
+thomas_more_social_media.ajax.counter:
+  path: '/ajax/thomas-more-social-media/counter'
+  defaults:
+    _controller: 'Drupal\thomas_more_social_media\Controller\AjaxController::counter'
+  requirements:
+    _permission: 'access content'
