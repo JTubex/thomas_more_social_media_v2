@@ -20,6 +20,7 @@ class SocialMediaBlock extends BlockBase {
   public function build() {
     return [
       '#theme' => 'social-media',
+      '#attached' => ['library' => ['thomas_more_social_media/social_media']],
     ];
   }
 
