@@ -4,3 +4,7 @@ social_media:
     component:
       'https://use.fontawesome.com/releases/v5.5.0/css/all.css': { type: external }
       assets/css/social-media.css : {}
+  js:
+    assets/js/thomas_more_social_media.counter.js: {}
+  dependencies:
+  - core/jquery
