@@ -3,3 +3,4 @@ social_media:
   css:
     component:
       'https://use.fontawesome.com/releases/v5.5.0/css/all.css': { type: external }
+      assets/css/social-media.css : {}
