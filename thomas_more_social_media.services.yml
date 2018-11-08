@@ -1,0 +1,4 @@
+services:
+  thomas_more_social_media.click_manager:
+    class: Drupal\thomas_more_social_media\ClickManager
+    arguments: ['@database', '@datetime.time']
