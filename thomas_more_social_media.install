@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function thomas_more_social_media_schema() {
+  $schema['thomas_more_social_media_counter'] = [
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+
+      'network' => [
+        'description' => 'The social media network.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'time_clicked' => [
+        'description' => 'The Unix timestamp when the user clicked on an social media icon.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => [
+      'id',
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Create Thomas More social media counter table.
+ */
+function thomas_more_social_media_update_8001(&$sandbox) {
+  $table = thomas_more_social_media_schema();
+  \Drupal::database()->schema()->createTable('thomas_more_social_media_counter', $table['thomas_more_social_media_counter']);
+}
