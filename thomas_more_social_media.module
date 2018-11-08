@@ -8,6 +8,10 @@ function thomas_more_social_media_theme() {
     'social-media' => [
       'variables' => [
         'facebook_url' => NULL,
+        'google_plus_url' => NULL,
+        'twitter_url' => NULL,
+        'linkedin_url' => NULL,
+        'foursquare_url' => NULL,
       ],
     ],
   ];
