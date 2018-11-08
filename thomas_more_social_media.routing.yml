@@ -10,3 +10,9 @@ thomas_more_social_media.ajax.counter:
     _controller: 'Drupal\thomas_more_social_media\Controller\AjaxController::counter'
   requirements:
     _permission: 'access content'
+thomas_more_social_media.charts:
+  path: '/admin/thomas-more-social-media/charts'
+  defaults:
+    _controller: 'Drupal\thomas_more_social_media\Controller\ChartsController::buildCharts'
+  requirements:
+    _permission: 'view social media charts'

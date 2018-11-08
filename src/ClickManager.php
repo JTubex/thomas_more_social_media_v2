@@ -28,7 +28,7 @@ class ClickManager {
   public function getClicks(string $network) {
     $query = $this->connection->select('thomas_more_social_media_counter', 't');
     $query->condition('t.network', $network);
-    return $query->countQuery()->execute()->fetchField();
+    return (int) $query->countQuery()->execute()->fetchField();
   }
 
 }
