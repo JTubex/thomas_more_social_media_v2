@@ -16,3 +16,9 @@ thomas_more_social_media.charts:
     _controller: 'Drupal\thomas_more_social_media\Controller\ChartsController::buildCharts'
   requirements:
     _permission: 'view social media charts'
+thomas_more_social_media.reset_counters:
+  path: 'admin/thomas-more-social-media/reset-counters'
+  defaults:
+    _form: 'Drupal\thomas_more_social_media\Form\ResetCountersForm'
+  requirements:
+    _permission: 'access administration pages'
