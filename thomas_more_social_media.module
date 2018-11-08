@@ -12,6 +12,11 @@ function thomas_more_social_media_theme() {
         'twitter_url' => NULL,
         'linkedin_url' => NULL,
         'foursquare_url' => NULL,
+        'facebook_count' => 0,
+        'google_plus_count' => 0,
+        'twitter_count' => 0,
+        'linkedin_count' => 0,
+        'foursquare_count' => 0,
       ],
     ],
   ];
